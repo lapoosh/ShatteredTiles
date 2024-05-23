@@ -1,0 +1,283 @@
+[gd_scene load_steps=6 format=3 uid="uid://cwgocqwpwcjxy"]
+
+[ext_resource type="Script" path="res://scripts/Main.gd" id="1_iovtm"]
+[ext_resource type="Script" path="res://scripts/Card.gd" id="2_2y8ni"]
+[ext_resource type="Texture2D" uid="uid://b30vfeh2khupb" path="res://assets/empty.jpg" id="2_5wpqt"]
+[ext_resource type="Script" path="res://scripts/TileOperations.gd" id="2_pnjhk"]
+[ext_resource type="Texture2D" uid="uid://bwenjubhx01e4" path="res://assets/blank210.png" id="4_04c2r"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_iovtm")
+
+[node name="Operations" type="Node2D" parent="."]
+script = ExtResource("2_pnjhk")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = -889.0
+offset_top = -511.0
+offset_right = -417.0
+offset_bottom = -452.0
+
+[node name="SpinButton" type="Button" parent="."]
+offset_left = 680.0
+offset_top = 428.0
+offset_right = 878.0
+offset_bottom = 472.0
+text = "SPIN"
+
+[node name="Tile1" type="TextureRect" parent="."]
+offset_left = -679.0
+offset_top = -426.0
+offset_right = -469.0
+offset_bottom = -216.0
+texture = ExtResource("2_5wpqt")
+script = ExtResource("2_2y8ni")
+
+[node name="ButtonTile1" type="Button" parent="Tile1"]
+layout_mode = 0
+offset_left = -1.0
+offset_right = 217.0
+offset_bottom = 218.0
+icon = ExtResource("4_04c2r")
+
+[node name="Tile2" type="TextureRect" parent="."]
+offset_left = -388.0
+offset_top = -426.0
+offset_right = -178.0
+offset_bottom = -216.0
+texture = ExtResource("2_5wpqt")
+script = ExtResource("2_2y8ni")
+
+[node name="ButtonTile2" type="Button" parent="Tile2"]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 214.0
+offset_bottom = 218.0
+icon = ExtResource("4_04c2r")
+
+[node name="Tile3" type="TextureRect" parent="."]
+offset_left = -106.0
+offset_top = -423.0
+offset_right = 104.0
+offset_bottom = -213.0
+texture = ExtResource("2_5wpqt")
+script = ExtResource("2_2y8ni")
+
+[node name="ButtonTile3" type="Button" parent="Tile3"]
+layout_mode = 0
+offset_left = -1.0
+offset_right = 217.0
+offset_bottom = 218.0
+icon = ExtResource("4_04c2r")
+
+[node name="Tile4" type="TextureRect" parent="."]
+offset_left = 182.0
+offset_top = -420.0
+offset_right = 392.0
+offset_bottom = -210.0
+texture = ExtResource("2_5wpqt")
+script = ExtResource("2_2y8ni")
+
+[node name="ButtonTile4" type="Button" parent="Tile4"]
+layout_mode = 0
+offset_left = -8.0
+offset_top = -6.0
+offset_right = 210.0
+offset_bottom = 212.0
+icon = ExtResource("4_04c2r")
+
+[node name="Tile5" type="TextureRect" parent="."]
+offset_left = 464.0
+offset_top = -420.0
+offset_right = 674.0
+offset_bottom = -210.0
+texture = ExtResource("2_5wpqt")
+script = ExtResource("2_2y8ni")
+
+[node name="ButtonTile5" type="Button" parent="Tile5"]
+layout_mode = 0
+offset_left = -1.0
+offset_right = 217.0
+offset_bottom = 218.0
+icon = ExtResource("4_04c2r")
+
+[node name="Tile6" type="TextureRect" parent="."]
+offset_left = -672.0
+offset_top = -174.0
+offset_right = -462.0
+offset_bottom = 36.0
+texture = ExtResource("2_5wpqt")
+script = ExtResource("2_2y8ni")
+
+[node name="ButtonTile6" type="Button" parent="Tile6"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = -3.0
+offset_right = 217.0
+offset_bottom = 215.0
+icon = ExtResource("4_04c2r")
+
+[node name="Tile7" type="TextureRect" parent="."]
+offset_left = -381.0
+offset_top = -174.0
+offset_right = -171.0
+offset_bottom = 36.0
+texture = ExtResource("2_5wpqt")
+script = ExtResource("2_2y8ni")
+
+[node name="ButtonTile7" type="Button" parent="Tile7"]
+layout_mode = 0
+offset_left = -4.0
+offset_top = -3.0
+offset_right = 214.0
+offset_bottom = 215.0
+icon = ExtResource("4_04c2r")
+
+[node name="Tile8" type="TextureRect" parent="."]
+offset_left = -93.0
+offset_top = -174.0
+offset_right = 117.0
+offset_bottom = 36.0
+texture = ExtResource("2_5wpqt")
+script = ExtResource("2_2y8ni")
+
+[node name="ButtonTile8" type="Button" parent="Tile8"]
+layout_mode = 0
+offset_left = 2.0
+offset_right = 220.0
+offset_bottom = 218.0
+icon = ExtResource("4_04c2r")
+
+[node name="Tile9" type="TextureRect" parent="."]
+offset_left = 195.0
+offset_top = -171.0
+offset_right = 405.0
+offset_bottom = 39.0
+texture = ExtResource("2_5wpqt")
+script = ExtResource("2_2y8ni")
+
+[node name="ButtonTile9" type="Button" parent="Tile9"]
+layout_mode = 0
+offset_left = -7.0
+offset_top = -3.0
+offset_right = 211.0
+offset_bottom = 215.0
+icon = ExtResource("4_04c2r")
+
+[node name="Tile10" type="TextureRect" parent="."]
+offset_left = 468.0
+offset_top = -174.0
+offset_right = 678.0
+offset_bottom = 36.0
+texture = ExtResource("2_5wpqt")
+script = ExtResource("2_2y8ni")
+
+[node name="ButtonTile10" type="Button" parent="Tile10"]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 214.0
+offset_bottom = 218.0
+icon = ExtResource("4_04c2r")
+
+[node name="Tile11" type="TextureRect" parent="."]
+offset_left = -671.0
+offset_top = 87.0
+offset_right = -461.0
+offset_bottom = 297.0
+texture = ExtResource("2_5wpqt")
+script = ExtResource("2_2y8ni")
+
+[node name="ButtonTile11" type="Button" parent="Tile11"]
+layout_mode = 0
+offset_left = -7.0
+offset_right = 211.0
+offset_bottom = 218.0
+icon = ExtResource("4_04c2r")
+
+[node name="Tile12" type="TextureRect" parent="."]
+offset_left = -377.0
+offset_top = 81.0
+offset_right = -167.0
+offset_bottom = 291.0
+texture = ExtResource("2_5wpqt")
+script = ExtResource("2_2y8ni")
+
+[node name="ButtonTile12" type="Button" parent="Tile12"]
+layout_mode = 0
+offset_left = -7.0
+offset_top = -3.0
+offset_right = 211.0
+offset_bottom = 215.0
+icon = ExtResource("4_04c2r")
+
+[node name="Tile13" type="TextureRect" parent="."]
+offset_left = -86.0
+offset_top = 78.0
+offset_right = 124.0
+offset_bottom = 288.0
+texture = ExtResource("2_5wpqt")
+script = ExtResource("2_2y8ni")
+
+[node name="ButtonTile13" type="Button" parent="Tile13"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = -4.0
+offset_right = 216.0
+offset_bottom = 214.0
+icon = ExtResource("4_04c2r")
+
+[node name="Tile14" type="TextureRect" parent="."]
+offset_left = 196.0
+offset_top = 75.0
+offset_right = 406.0
+offset_bottom = 285.0
+texture = ExtResource("2_5wpqt")
+script = ExtResource("2_2y8ni")
+
+[node name="ButtonTile14" type="Button" parent="Tile14"]
+layout_mode = 0
+offset_left = -5.0
+offset_top = -4.0
+offset_right = 213.0
+offset_bottom = 214.0
+icon = ExtResource("4_04c2r")
+
+[node name="Tile15" type="TextureRect" parent="."]
+offset_left = 472.0
+offset_top = 75.0
+offset_right = 682.0
+offset_bottom = 285.0
+texture = ExtResource("2_5wpqt")
+script = ExtResource("2_2y8ni")
+
+[node name="ButtonTile15" type="Button" parent="Tile15"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = -1.0
+offset_right = 216.0
+offset_bottom = 217.0
+icon = ExtResource("4_04c2r")
+
+[connection signal="pressed" from="SpinButton" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Tile1/ButtonTile1" to="." method="_on_button_tile_1_pressed"]
+[connection signal="pressed" from="Tile1/ButtonTile1" to="Operations" method="_on_button_tile_1_pressed"]
+[connection signal="pressed" from="Tile2/ButtonTile2" to="." method="_on_button_tile_2_pressed"]
+[connection signal="pressed" from="Tile2/ButtonTile2" to="Operations" method="_on_button_tile_2_pressed"]
+[connection signal="pressed" from="Tile3/ButtonTile3" to="." method="_on_button_tile_3_pressed"]
+[connection signal="pressed" from="Tile3/ButtonTile3" to="Operations" method="_on_button_tile_3_pressed"]
+[connection signal="pressed" from="Tile4/ButtonTile4" to="." method="_on_button_tile_4_pressed"]
+[connection signal="pressed" from="Tile4/ButtonTile4" to="Operations" method="_on_button_tile_4_pressed"]
+[connection signal="pressed" from="Tile5/ButtonTile5" to="." method="_on_button_tile_5_pressed"]
+[connection signal="pressed" from="Tile5/ButtonTile5" to="Operations" method="_on_button_tile_5_pressed"]
+[connection signal="pressed" from="Tile6/ButtonTile6" to="." method="_on_button_tile_6_pressed"]
+[connection signal="pressed" from="Tile7/ButtonTile7" to="." method="_on_button_tile_7_pressed"]
+[connection signal="pressed" from="Tile8/ButtonTile8" to="." method="_on_button_tile_8_pressed"]
+[connection signal="pressed" from="Tile9/ButtonTile9" to="." method="_on_button_tile_9_pressed"]
+[connection signal="pressed" from="Tile10/ButtonTile10" to="." method="_on_button_tile_10_pressed"]
+[connection signal="pressed" from="Tile11/ButtonTile11" to="." method="_on_button_tile_11_pressed"]
+[connection signal="pressed" from="Tile12/ButtonTile12" to="." method="_on_button_tile_12_pressed"]
+[connection signal="pressed" from="Tile13/ButtonTile13" to="." method="_on_button_tile_13_pressed"]
+[connection signal="pressed" from="Tile14/ButtonTile14" to="." method="_on_button_tile_14_pressed"]
+[connection signal="pressed" from="Tile15/ButtonTile15" to="." method="_on_button_tile_15_pressed"]

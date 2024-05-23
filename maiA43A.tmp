@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwgocqwpwcjxy"]
+
+[ext_resource type="Script" path="res://scripts/Main.gd" id="1_iovtm"]
+[ext_resource type="Script" path="res://Card.gd" id="2_2y8ni"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_iovtm")
+
+[node name="Card" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_2y8ni")
